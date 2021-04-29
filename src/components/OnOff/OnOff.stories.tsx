@@ -16,19 +16,10 @@ const Template: Story<PropsType> = (args) => <OnOff {...args} />;
 
 
 export const OnMode = Template.bind({})
-OnMode.args = {
-
-    on:true,
-    onChange: a=>a
-
-}
+OnMode.args = {on:true, onChange: a=>a}
 
 export const OffMode= Template.bind({})
-OffMode.args = {
-
-    on:false,
-    onChange: a=>a
-}
+OffMode.args = {on:false, onChange: a=>a}
 
 
 

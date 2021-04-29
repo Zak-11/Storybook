@@ -25,7 +25,8 @@ export function Accordion(props: AccordionPropsType) {
 
 }
 
-function AccordionTitle(props: AccordionTitlePropsType) {return (<h3 onClick={props.onChange}> --- {props.title} ---</h3>)
+function AccordionTitle(props: AccordionTitlePropsType)
+{return (<h3 onClick={props.onChange}> --- {props.title} ---</h3>)
 }
 
 function AccordionBody() {
@@ -37,5 +38,6 @@ function AccordionBody() {
 
 
 }
+
 
 export default Accordion

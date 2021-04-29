@@ -1,9 +1,10 @@
 import React from "react";
+import {RatingValueType} from "../UncontrolledRating/UncontrolledRating";
 
 
-export type  RatingValueType = 0 | 1 | 2 | 3 | 4 | 5
 
-type RatingPropsType = {
+
+export type RatingPropsType = {
     value: RatingValueType
     onClick: (value: RatingValueType) => void
 }
@@ -30,8 +31,6 @@ export function Rating(props: RatingPropsType) {
  }
 
 function Star(props:StartPropsType) {
-
-
     return <span onClick={() =>{ props.onClick(props.value)}}>
         { props.selected ? <b> star </b> : "star" }
         </span>

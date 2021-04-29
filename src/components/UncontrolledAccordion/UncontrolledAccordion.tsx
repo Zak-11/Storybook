@@ -1,9 +1,14 @@
 import React, {useState} from "react";
 
 
-type AccordionPropsType = {
+export type AccordionPropsType = {
     titleValue: string
-    //collapsed: boolean
+
+}
+type AccordionTitlePropsType = {
+    title: string
+    onClick: () => void
+
 }
 
 
@@ -22,11 +27,6 @@ export function UncontrolledAccordion(props: AccordionPropsType) {
     </div>
 
 
-    type AccordionTitlePropsType = {
-        title: string
-        onClick: () => void
-
-    }
 
     function AccordionTitle(props: AccordionTitlePropsType) {
         return (<h3 onClick={ () => {props.onClick()}}> --- {props.title} ---</h3>
@@ -43,3 +43,4 @@ export function UncontrolledAccordion(props: AccordionPropsType) {
 
     }
 }
+
