@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Story} from "@storybook/react";
-import Accordion, {AccordionPropsType} from "./Accordion";
+import {Accordion, AccordionPropsType} from "./Accordion";
 import {actions} from "@storybook/addon-actions";
 
 
